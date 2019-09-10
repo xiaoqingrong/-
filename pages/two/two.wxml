@@ -1,0 +1,13 @@
+<wxs src="../comm.wxs" module="tools" />
+
+<view class="container">
+  <button data-id='30' bindtap='datato'>上传图片</button>
+</view>
+ 
+<view>
+  <image wx:for="{{seeImage}}" wx:key="*this" src='{{item}}' style='height:60px;width:60px;' data-idx="{{index}}" bindtap="handleImagePreview"></image>
+</view>
+<view> <textarea bindinput='ipnChange' placeholder="请输入留言信息" style='width:80%;margin:20px auto;border:1px solid #ccc;'></textarea> </view>
+<view>
+  <button style='background:green' bindtap='sub'>提交</button>
+</view>

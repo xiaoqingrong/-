@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view>
+  <button bindtap='report'>发表动态</button>
+</view>
+<view wx:if="{{data !=''}}">
+  <image wx:for="{{data}}" src='{{item}}'></image>
+  <view> <text>{{txtValue}}</text> </view>
+</view>
